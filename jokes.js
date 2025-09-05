@@ -24,3 +24,8 @@ const jokes = [
   "I asked my dog what's two minus two. He said nothing."
 ];
 let jokesIndex = Math.floor(Math.random() * jokes.length);
+button.addEventListener('click',()=>{
+    firstdiv.textContent = `${jokes[jokesIndex]}`;
+    document.body.appendChild(firstdiv);
+    jokesIndex = Math.floor(Math.random() * jokes.length);
+})
